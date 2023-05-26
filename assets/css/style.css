@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: grey;
+    color: white;
+    font-size: 3rem;
+    
+    /* height: 50px; */
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.rightNav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* margin: auto; */
+    margin-right: 40px;
+    height: 100px;
+    
+}
+
+.signUpBtn {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* MODAL */
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.show{
+    display: block;
+}
+
+.innerModal {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: 430px;
+    width: 600px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* SIGNUP FORM */
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.signUpForm input {
+    margin-bottom: 30px;
+    height: 50px;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-radius: 5px; */
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.signUpForm button{
+    margin-bottom: 30px;
+    height: 50px;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+.signUp {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.succes {
+    border: solid 2px green;
+}
+
+.error {
+    border: solid 2px red;
+}
